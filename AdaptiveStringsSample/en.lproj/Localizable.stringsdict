@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WELCOME_MESSAGE</key>
+	<dict>
+		<key>NSStringVariableWidthRuleType</key>
+		<dict>
+			<key>20</key>
+			<string>Hello</string>
+			<key>25</key>
+			<string>Welcome</string>
+			<key>50</key>
+			<string>Welcome to my app</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
