@@ -10,11 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet var fontLabel: UILabel!
+    @IBOutlet weak var welcomeLabel: UILabel!
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    welcomeLabel.text = NSLocalizedString("WELCOME_MESSAGE", comment: "This is the welcome message.")
-  }
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+
+        self.welcomeLabel.text = NSLocalizedString("WELCOME_MESSAGE", comment: "This is the welcome message.")
+        self.fontLabel.text = UIFont.preferredFont(forTextStyle: .body).description
+    }
 }
 
